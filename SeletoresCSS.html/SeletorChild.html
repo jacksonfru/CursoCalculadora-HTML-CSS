@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Seletor Child</title>
+
+    <style>
+
+        div > p {background-color: yellow;}
+
+</style>
+</head>
+<body>
+
+<h2>Child Selector</h2>
+<p>O seletor filho (filho) seleciona todos os elementos que são filhos de um elemento especificado.</p>
+
+<div>
+    <p>Parágrafo 1 dentro da div.</p>
+    <p>Parágrafo 2 dentro da div.</p>
+    <section><p>Parágrafo 3 dentro div.</p></section>  <!-- não e child mas sim descendant-->
+    <p>Parágrafo 4 dentro da div.</p>
+
+</div>
+    
+<p>Parágrafo 5 fora da div.</p>
+<p>Parágrafo 6 fora da div.</p>
+
+
+</body>
+</html>

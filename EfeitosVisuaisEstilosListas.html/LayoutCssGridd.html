@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Layout CSS Grid </title>
+
+    <style>
+
+* {
+
+box-sizing: border-box;
+}
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.header {
+
+grid-area: header;
+background-color: aquamarine;
+text-align: center;
+padding: 20px;
+font-size: 15px;
+}
+.grid-container {
+
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'left middle middle middle middle right'
+    'footer footer footer footer footer footer';
+}
+.left,
+.middle,
+.right {
+    padding: 10px;
+    height: 300px;  
+}
+
+.left {
+
+    grid-area: left;
+    background-color: #898bae;
+}
+.middle {
+grid-area: middle;
+background-color: white;
+}
+.right {
+
+    grid-area: right;
+    background-color: #898bae;
+}
+
+/* Para as colunas ficarem, umas em cima das outras e não ao lado de umas as outras, em formato mobile.*/
+@media (max-width: 600px) {
+
+    .grid-container {
+
+        grid-template-areas: 
+        'header header header header header header'  /* Será representado pelo cabeçalho */
+        'left left left left left left'              /* Será representada pela coluna a esquerda */
+        'middle middle middle middle middle middle'  /* Será representado pela coluna do meio */
+        'right right right right right right'        /* Será representada pela coluna da direita */
+        'footer footer footer footer footer footer';  /* Será representado pelo rodapé */
+        
+    }
+}
+
+.footer {
+grid-area: footer;
+background-color: #ffd6ba;
+padding: 10px;
+text-align: center;
+}
+    </style>
+
+
+</head>
+<body>
+
+    
+
+    <div class="grid-container">
+    
+        <div class="header">
+    
+    
+          <h1> CSS Template </h1>
+    
+          <h2>Template construído através de CSS Grid e com comportamento
+          responsivo </h2>
+    
+        </div>
+    
+        <div class="left"> Coluna esquerda </div>
+        <div class="middle"> Coluna meio </div>
+        <div class="right"> Coluna direita </div>
+    
+      
+    
+        <div class="footer">
+    
+            <p> Footer </p>
+    
+    
+        </div>
+
+       
+
+    </div>
+
+    
+</body>
+</html>

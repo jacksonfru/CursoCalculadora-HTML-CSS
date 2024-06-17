@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Flex-Wrap</title>
+    <style>
+        .container {
+            display: flex;
+            width: 300px;
+            height: auto;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+        .item {
+            flex: 1 1 100px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="flex-wrap: nowrap;">
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+    </div>
+
+    <div class="container" style="flex-wrap: wrap;">
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+    </div>
+
+    <div class="container" style="flex-wrap: wrap-reverse;">
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+    </div>
+</body>
+</html>

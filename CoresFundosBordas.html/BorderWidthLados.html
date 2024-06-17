@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Width Lados</title>
+
+
+    <style>
+
+        p{
+            border-style: solid;
+            border-width: 2px 4px 0.5px 8px;
+        }
+
+        .meu_titulo1{
+            border-top-width: outset;
+        }
+
+        #caixa_2{
+            border-right-width: outset;
+        }
+
+        .meu_titulo3{
+            border-bottom-width: outset;
+        }
+
+        #caixa_4{
+            border-left-width: outset;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>A propriedade <i>border-width</i></h1>
+
+    <p>Este parágrafo tem <i>border</i> com espessuras diferentes nos 4
+    lados. Em cima tem 21px, do lado direito 4px, em baixo 0.5px e 
+    do lado esquerdo tem 8px.</p>
+
+    <P class="meu_titulo1"> border-top-width, opção de espessuras disponvel.</P>
+
+    <p id="caixa_2"> border-right-width, opção de espessuras disponível.</p>
+
+    <p class="meu_titulo3"> border-bottom-width, opção de espessuras disponível.</p>
+    
+    <p id="caixa_4"> border-left-width, opção de espessuras disponível.</p>
+</body>
+</html>

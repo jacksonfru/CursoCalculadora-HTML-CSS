@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Layout CSS Flexbox </title>
+
+    <style>
+
+    * {
+
+        box-sizing: border-box;
+    }
+
+    body {
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+
+        background-color: aquamarine;
+        text-align: center;
+        padding: 15px;
+        font-size: 10px;
+
+    }
+
+    .column {
+        padding: 10px;
+        height: 300px;
+    }
+
+    .column.side {
+
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background-color: #555b6e;
+    }
+
+    #column_right {
+
+        background-color: #898bae;
+    }
+
+    .column.middle {
+
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        background-color: #faf9f9;
+    }
+
+    .row {
+
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .footer {
+
+        background-color: #ffd6ba;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    /* Para as colunas ficarem, umas em cima das outras e não ao lado de umas as outras.*/
+    @media (max-width: 600px) {
+
+      .row {
+
+        -webkit-flex-direction: column;
+        flex-direction:column;
+      }
+
+        h2 {
+
+            font-size: 40px;
+        }
+    }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+    
+    
+    <h1> CSS Template </h1>
+
+    <h2>Template construído através de CSS Flexbox e com comportamento
+    responsivo </h2>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="column side"> Coluna esquerda </div>
+        <div class="column middle"> Coluna meio </div>
+        <div class="column side" id="column_right"> Coluna direita </div>
+
+    </div>
+
+    <div class="footer">
+
+        <p> Footer </p>
+
+
+    </div>
+
+</body>
+</html>

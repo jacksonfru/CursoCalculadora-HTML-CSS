@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho Final Seletores Css 2</title>
+
+<style>
+
+    body {background-color: rgb(237, 237, 237);}
+
+    h1 {text-align: center; color: blue; padding: 20px; background-color: #d7d7d7;}
+
+    h1::before, h1::after {content: '_____'; color: blue;}
+    
+    
+    p {text-align: center; padding: 20px;} 
+
+    #parágrafo_2{
+        background-color: #d7d7d7;
+    }
+
+    h2  {text-align: center; color: #e8b05d;}
+
+    footer {text-align: right;}
+
+</style>
+
+
+</head>
+<body>
+
+
+    <h1><strong>A minha primeira página utilizando seletores</strong></h1>
+
+    <h2>Título 1</h2>
+
+    <p>Estilizar o corpo principal do documento (body) com cor de fundo rgb
+        (237, 237, 237) ou similar (hex).
+         O título h1 deverá estar alinhado ao centro (text-align:center;), ser de
+        cor azul (name:blue) ou similar (rgb, hex), com um padding de 20px e
+        uma cor de fundo #d7d7d7 (ou similar, em rgb). Deverá ainda conter
+        pseudo-elements ::after e ::before com conteúdo exemplificado no código que se apresenta abaixo: </p>
+        
+    <h2>Título 2</h2>
+
+    <p id="parágrafo_2">Os títulos 1, 2 e 3 mantêm as suas características por defeito, sendo
+        que apenas a sua cor e o seu alinhamento (centrado) mudam. São os
+        três elementos da mesma classe (meu_titulo) e têm cor #e8b05d (ou
+        similar, em rgb).
+         Todos os parágrafos têm padding 20px.
+         O parágrafo 2 é um elemento único (com id “paragrafo_2”) que mantém
+        as mesmas propriedades dos outros parágrafos, com exceção do seu
+        fundo, que deverá ser de cor #d7d7d7 (ou similar, em rgb). 
+        </p>
+
+    <h2>Título 3</h2>
+
+    <p>O parágrafo do rodapé é um elemento único com id “footer”, que
+        mantém as propriedades dos outros parágrafos, com exceção do seu
+        alinhamento, que deve ser à direita. </p>
+
+    <hr>
+
+    <p><footer>por Sara Granja, 2020</footer></p>
+
+
+
+
+    
+</body>
+</html>

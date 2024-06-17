@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Flow Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Exemplo com flex-direction: row e flex-wrap: nowrap -->
+    <div class="container" style="flex-flow: row nowrap;">
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+        <div class="item">SOL</div>
+    </div>
+
+    <!-- Exemplo com flex-direction: row e flex-wrap: wrap -->
+    <div class="container" style="flex-flow: row wrap;">
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+        <div class="item">TERRA</div>
+    </div>
+
+    <!-- Exemplo com flex-direction: column e flex-wrap: nowrap -->
+    <div class="container" style="flex-flow: column nowrap;">
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+        <div class="item">LUA</div>
+    </div>
+
+    <!-- Exemplo com flex-direction: column e flex-wrap: wrap-reverse -->
+    <div class="container" style="flex-flow: column wrap-reverse;">
+        <div class="item">MARTE</div>
+        <div class="item">MARTE</div>
+        <div class="item">MARTE</div>
+        <div class="item">MARTE</div>
+        <div class="item">MARTE</div>
+    </div>
+
+</body>
+</html>

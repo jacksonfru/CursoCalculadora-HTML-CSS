@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da Propriedade Flex</title>
+    
+
+
+    <style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 80%;
+    background-color: #fff;
+}
+
+.item {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+}
+
+.item1 {
+    background-color: #4CAF50;
+    flex: 1; /* Item 1 irá crescer para ocupar o espaço disponível igualmente */
+}
+
+.item2 {
+    background-color: #2196F3;
+    flex: 2; /* Item 2 irá crescer para ocupar o dobro do espaço de item 1 */
+}
+
+.item3 {
+    background-color: #FF5722;
+    flex: 1 1 100px; /* Item 3 irá crescer e encolher com base em um tamanho inicial de 100px */
+}
+
+.item4 {
+    background-color: #9C27B0;
+    flex: 0 1 50px; /* Item 4 não irá crescer, pode encolher, com um tamanho inicial de 50px */
+}
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">SOL</div>
+        <div class="item item2">TERRA</div>
+        <div class="item item3">LUA</div>
+        <div class="item item4">MARTE</div>
+    </div>
+
+</body>
+</html>

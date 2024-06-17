@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.search-bar {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-right: none; /* Remove a borda direita para separar o botão */
+    border-radius: 4px 0 0 4px; /* Bordas arredondadas no lado esquerdo */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none; /* Remove a borda esquerda para unir com o campo de texto */
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; /* Bordas arredondadas no lado direito */
+}
+
+/* Estilo quando o botão é pressionado */
+.search-bar button:hover {
+    background-color: #ddd;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button type="submit">Buscar</button>
+    </div>
+
+</body>
+</html>

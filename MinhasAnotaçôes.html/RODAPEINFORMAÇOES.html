@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Flexbox</title>
+    
+
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.input-half {
+    flex: 1 1 calc(50% - 10px);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: calc(100% - 10px);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #444;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Name" class="input-half">
+                <input type="email" placeholder="Email" class="input-half">
+            </div>
+            <div class="form-row">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="submit-btn">SEND</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

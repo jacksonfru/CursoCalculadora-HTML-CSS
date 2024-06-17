@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Formulário</title>
+
+</head>
+<body>
+
+    <h1><strong>Formulário</strong></h1>
+
+    <hr>
+
+    <form> Nome <input type="nome" id="nome"> </form><br>
+
+    <form> Introduza a sua password  <input type="password" id="pass" name="palavra-passe"> </form><br>
+
+    <form> Data de Nascimento <input type="date" id="birthday" name="data nascimento"> </form><br>
+
+    <form> Telefone <input type="tel" id="phone" name="telefone" placeholder="123-456-789" pattern="[0-9][0-9][0-9][[0-9][0-9][0-9][0-9][0-9][0-9]"></form><br>
+
+    <form> E-mail  <input type="email" name="e-mail" id="e-mail"> </form>
+
+    <h3>Género</h3>
+
+    <input type="radio" id="male" name="gender" value="male"> Masculino
+    <br>
+    <input type="radio" id="female" name="gender" value="female"> Feminino
+
+    <h3>Nacionalidade</h3><br>
+
+    <select name="select">
+
+        <option value="Nacionalidade">Portuguesa</option>
+        <option value="Nacionalidade">Outra</option>
+
+    </select><br>
+
+    <h3>Escolheu este curso por motivos profissionais?</h3><br>
+
+    <input type="checkbox" id="box" name="sim" value="sim" checked>sim<br>
+
+    <input type="checkbox" id="box" name="nao" value="nao"> NÃO <br>
+
+    <h3>Descreva as suas motivações para frequentar este curso</h3><br>
+
+    <textarea cols="50" rows="20" name="descrição"></textarea><br>
+
+    <h3>Numa escala de 1 a 5 como avalia este curso?</h3><br>
+
+    <input type="range" id="range" name="range" min="0" max="5"> <br>
+
+    <hr>
+
+    <button type="submit">Ennviar Formulário</button>
+    <button type="reset">Apagar Formulário</button>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

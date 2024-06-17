@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .item {
+            flex: 1;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" style="flex-direction: row;">
+    <div class="item">SOL</div>
+    <div class="item">SOL</div>
+    <div class="item">SOL</div>
+</div>
+
+<div class="container" style="flex-direction: row-reverse;">
+    <div class="item">TERRA</div>
+    <div class="item">TERRA</div>
+    <div class="item">TERRA</div>
+</div>
+
+<div class="container" style="flex-direction: column;">
+    <div class="item">LUA</div>
+    <div class="item">LUA</div>
+    <div class="item">LUA</div>
+</div>
+
+<div class="container" style="flex-direction: column-reverse;">
+    <div class="item">MARTE</div>
+    <div class="item">MARTE</div>
+    <div class="item">MARTE</div>
+</div>
+
+</body>
+</html>

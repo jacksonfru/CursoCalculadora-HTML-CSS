@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição de Uma Imagem de Fundo</title>
+
+    <style>
+
+        h1{
+            
+            text-align: center; 
+            margin: 20px;
+            font-size: 50px;
+            background-color: #fc9d03;}
+
+        h2{
+
+            text-align: center;
+            margin: 20px;
+            font-size: 35px;
+        }
+
+        .meu_titulo{
+            background-color: rgb(237, 200, 140);
+            font-size: 24px;
+        }
+
+        #caixa_1{
+
+            width: 100%;
+            height: 200px;
+            background-image: url(Masterd-logo.jpeg);
+            background-repeat: no-repeat;
+            background-position: top left;
+
+        }
+
+        #caixa_2{
+            width: 100%;
+            height: 200px;
+            background-image: url(Masterd-logo.jpeg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #caixa_3{
+
+            width: 100%;
+            height: 200px;
+            background-image: url(Masterd-logo.jpeg);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1> Propriedade <i> background-position </i></h1>
+
+    <h2> valores "top left", "center center" e "bottom right"</h2>
+
+    <h3> top left </h3>
+
+    <p class="meu_titulo"> Esta imagem posiciona-se no topo do elemento, à esquerda.</p>
+
+    <div id="caixa_1">
+
+    </div>
+
+    <h3> top center</h3>
+
+    <p class="meu_titulo"> Esta imagem posiciona-se no centro do elemento.</p>
+
+    <div id="caixa_2">
+
+    </div>
+
+    <h3> top right </h3>
+
+    <p class="meu_titulo"> Esta imagem posiciona-se na parte inferior do elemento, à direita.</p>
+
+    <div id="caixa_3">
+
+    </div>
+    
+</body>
+</html>

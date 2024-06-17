@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #272727;
+    font-family: Helvetica, sans-serif;
+}
+
+.navMenu {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-60%, -60%);
+    transform: translate(-60%, -60%);
+}
+
+.navMenu a {
+
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+
+}
+
+.navMenu a:hover {
+
+    color: #fddb3a;
+}

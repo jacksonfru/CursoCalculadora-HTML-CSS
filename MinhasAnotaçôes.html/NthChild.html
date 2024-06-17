@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Seleciona todos os itens pares */
+        .item:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        /* Seleciona todos os itens ímpares */
+        .item:nth-child(odd) {
+            background-color: lightgreen;
+        }
+
+        /* Seleciona cada terceiro item, começando do primeiro */
+        .item:nth-child(3n+1) {
+            font-weight: bold;
+        }
+
+        /* Seleciona o segundo item */
+        .item:nth-child(2) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+    </ul>
+
+</body>
+
+</html>

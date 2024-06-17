@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.container {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.item {
+  padding: 10px;
+  margin: 5px;
+  background-color: lightblue;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.item1 {
+  flex-basis: 100px;
+/*FLEX-GROW aplicado, sempre após o FLEX-BASIS que  e o inicial*/
+  flex-grow: 1;
+}
+
+.item2 {
+  flex-basis: 200px;
+/*FLEX-GROW aplicado, sempre após o FLEX-BASIS que  e o inicial*/
+  flex-grow: 2;
+}
+
+.item3 {
+  flex-basis: 150px;
+/*FLEX-GROW aplicado, sempre após o FLEX-BASIS que  e o inicial*/
+  flex-grow: 1;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">SOL</div>
+        <div class="item item2">LUA</div>
+        <div class="item item3">TERRA</div>
+      </div>
+
+</body>
+</html>

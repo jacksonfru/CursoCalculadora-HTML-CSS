@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial - Gradeinte - Keywords</title>
+
+    <style>
+        #grad1{
+            height: 250px;
+            width: 250px;
+            background-image: radial-gradient(closest-side at 20% 80%, aqua, red, black);
+        }
+
+        #grad2{
+            height: 250px;
+            width: 250px;
+            background-image: radial-gradient(farthest-side at 20% 80%, aqua, red, black);
+        }
+
+        #grad3{
+            height: 250px;
+            width: 250px;
+            background-image: radial-gradient(closest-corner at 20% 80%, aqua, red, black);
+        }
+
+        #grad4{
+            height: 250px;
+            width: 250px;
+            background-image: radial-gradient(farthest-corner at 20%  80%, aqua, red, black);
+        }
+
+        #grad5{
+            height: 250px;
+            width: 250px;
+            background-image: repeating-radial-gradient(black, yellow 10%,aqua 30%);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Radial Gradiente - Keywords para tamanhos diferentes </h1>
+
+    <h2>closest-side</h2>
+    <div id="grad1"></div>
+    <h2>farthest-side</h2>
+    <div id="grad2"></div>
+    <h2>closest-coner</h2>
+    <div id="grad3"></div>
+    <h2>farthest-coner</h2>
+    <div id="grad4"></div>
+
+    <h1> Gradiente Radial - Repetição</h1>
+    <div id="grad5"></div>
+    
+</body>
+</html>
