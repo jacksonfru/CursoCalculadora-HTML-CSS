@@ -9,15 +9,15 @@ body {
 }
 
 .calculator {
-    background-color: #333;
-    border-radius: 10px;
+    background-color: black;
+    border-radius: 1px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
 .display {
-    background-color: #444;
-    padding: 20px;
+    background-color: black;
+    padding: 40px;
     text-align: right;
     font-size: 2rem;
 }
@@ -29,21 +29,22 @@ body {
     color: white;
     font-size: 2rem;
     text-align: right;
+
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 20px;
+    padding: 15px;
 }
 
 button {
-    background-color: #555;
+    background-color: #313131;
     border: none;
     color: white;
-    font-size: 1.5rem;
-    border-radius: 5px;
+    font-size: 3rem;
+    border-radius: 100%;
     cursor: pointer;
     padding: 20px;
 }
@@ -63,4 +64,35 @@ button.equal:hover {
 
 button.zero {
     grid-column: span 2;
+}
+
+.verde {
+
+    color: green;
+}
+
+.verdeBranco {
+
+    background-color: green;
+    color: white;
+}
+
+
+.centered-hr {
+    border: none;
+    /* Remove todas as bordas */
+    height: 1px;
+    /* Define a altura da linha */
+    background-color: white;
+    /* Define a cor da linha */
+    width: 80%;
+    /* Define a largura da linha */
+    opacity: 0.33;
+    margin: 0 auto;
+    /* Centraliza a linha horizontalmente */
+}
+
+.visual {
+
+    background-color: rgb(26, 25, 25);
 }
